@@ -32,9 +32,46 @@ img{
 .container{
     max-width: var(--anchomaximo);
     margin: 0 auto;
+    padding: 0 0,625rem;
 
 }
 body{
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
+}
+/*inicio header*/
+header .nav-top{
+    background-color: var(--colorsecundario);
+    padding: 1.25rem 0 rem;
+}
+
+header.nav-top .container{
+    display: flex;
+    justify-content: space-around;
+    &span{
+        display: none;
+    }
+    &i{
+        color: var(--colorprincipal);
+        font-size: 140%;
+    }
+}
+
+@media( min-width:48rem){
+    header.nav-top .container{
+        
+        justify-content: space-between;
+        &span{
+            display: inline;
+        }
+        &i{
+            color: var(--colorprincipal);
+            font-size: 140%;
+        }
+        &a{
+            color: white;
+            text-decoration: none;
+            font-size: 120%;
+
+        }
 }
