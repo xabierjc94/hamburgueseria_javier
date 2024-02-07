@@ -120,6 +120,32 @@ header .menu .activo{
 
 
 /* final header */
+/*inicio de footer*/
+footer{
+    background-color: var(--colorsecundario);
+    text-align: center;
+    color: white;
+    padding: 1.25rem 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    &hover{
+        color: var(--colorprincipal)
+    }
+}
+.flecha a{
+font-size: 300%;
+color: var(--colorprincipal);
+position: fixed;
+bottom: 3.75rem;
+right: 0.625rem;
+}
+/*final de footer*/
+
 
 
 
@@ -139,8 +165,13 @@ header .menu .activo{
             text-decoration: none;
             font-size: 110%;
         }
-    }    
+        
+    }  
+    footer{
+        text-align: left;
+    }  
 }
+
 @media(min-width: 62.75rem){
     header .hamburguesa{
         display: none;  
