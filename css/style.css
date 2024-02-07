@@ -276,6 +276,36 @@ main .grid article{
 }
 /*final our services*/
 
+/*inicio about us*/
+
+
+#aboutus {
+    margin-bottom: 12.5rem;
+    
+}
+section#aboutus .flex{
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--margingrid);
+    & h3{
+        font-weight: 700;
+        font-size: 120%;
+
+    }
+    & h4{
+        color: var(--colorprincipal);
+        font-size: 110%;
+        margin: var(--margingrid) 0;
+    }
+    & p{
+        color: #666;
+        line-height: 1.20;
+    }
+
+}
+/* final aboutus*/
+
 
 
 
