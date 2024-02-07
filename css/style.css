@@ -61,6 +61,72 @@ header .nav-top .container{
     }
 }
 
+header nav .container{
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+header figure nav a{
+
+    display:block ;
+    max-width: 6.25rem;
+}
+header .hamburguesa{
+    width: 20%;
+    padding: 1.25rem 0;
+}
+
+header figure{
+    width: calc(100%-1.875rem);
+    padding: 1.25rem 0;
+}
+
+header .hamburguesa{
+    width: 1.875rem;
+    padding: 1.25rem 0;
+    cursor: pointer;
+   
+}
+header .menu{
+    width: 100%;
+
+}
+
+
+header .hamburguesa div{
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625rem;
+}
+
+
+header .menu a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    color: #aaa;
+}
+header .menu li:last-child a{
+    border-bottom: 0;
+}
+header .menu .activo{
+    color: var(--colorprincipal);
+}
+
+
+
+/* final header */
+
+
+
+
+
+/*inicio mediaquoris*/
+
 @media( min-width: 48rem ){
     header .nav-top .container{
         justify-content: space-between;
@@ -75,6 +141,27 @@ header .nav-top .container{
         }
     }    
 }
+@media(min-width: 62.75rem){
+    header .hamburguesa{
+        display: none;  
+    }
 
+    header nav .container{
+         flex-wrap: nowrap;
+    }
+   
+   
 
-/* final header */
+   
+    header .menu {
+        display: flex;
+       justify-content: end;
+       padding: 0.5rem 0;
+    }
+
+    header .menu a{
+        border: 0px;
+        padding: 1.25rem 0rem 1.25rem 2.5rem;
+    }
+}
+
