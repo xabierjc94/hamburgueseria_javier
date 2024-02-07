@@ -1,27 +1,27 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 *{
     box-sizing: border-box;
 }
 
 html{
-    scroll-behavior: smooth;
+   scroll-behavior: smooth; 
 }
+/*
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
 
 :root{
-    --fuenteprincipal:'Montserrat', sans-serif;
-    --fuentetitulos: 'Handlee', cursive;
-    --colorprincipal:red;
-    --colorsecundario:#21242e;
-    --fontsize:1rem;
-    --anchomaximo:68.75rem;
-    --margingrid:1rem;
-
-
+   --fuenteprincipal: 'Montserrat', sans-serif;
+   --fuentetitulos: 'Handlee', cursive;
+   --colorprincipal: #fa573a;
+   --colorsecundario: #21242e;
+   --fontsize: 1rem;
+   --anchomaximo: 68.75rem;
+   --margingrid: 1rem;
 }
 
 img{
@@ -29,49 +29,52 @@ img{
     height: auto;
     display: block;
 }
+
 .container{
     max-width: var(--anchomaximo);
     margin: 0 auto;
-    padding: 0 0,625rem;
-
+    padding:0 0.625rem;
 }
+
+
 body{
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
 }
-/*inicio header*/
+
+/* inicio header */
+
 header .nav-top{
     background-color: var(--colorsecundario);
-    padding: 1.25rem 0 rem;
+    padding: 1.25rem 0rem;
 }
 
-header.nav-top .container{
+header .nav-top .container{
     display: flex;
     justify-content: space-around;
-    &span{
+    & span{
         display: none;
     }
-    &i{
+    & i{
         color: var(--colorprincipal);
         font-size: 140%;
     }
 }
 
-@media( min-width:48rem){
-    header.nav-top .container{
-        
+@media( min-width: 48rem ){
+    header .nav-top .container{
         justify-content: space-between;
-        &span{
+        & span{
             display: inline;
+            
         }
-        &i{
-            color: var(--colorprincipal);
-            font-size: 140%;
-        }
-        &a{
+        & a{
             color: white;
             text-decoration: none;
-            font-size: 120%;
-
+            font-size: 110%;
         }
+    }    
 }
+
+
+/* final header */
