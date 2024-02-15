@@ -35,7 +35,15 @@ img{
     margin: 0 auto;
     padding:0 0.625rem;
 }
-
+.date-box{
+    background-color: rgb(234, 114, 114);
+  color: rgb(255, 252, 252);
+  padding: 20px;
+  max-width: 80px;
+  text-align: center;
+  display: block;
+ 
+}
 
 body{
     font-family: var(--fuenteprincipal);
@@ -209,7 +217,7 @@ footer a{
 
 /* fin hero */
 
-/* inicio our services */
+/* inicio Our blogs*/
 
 main section {
     padding: 2.125rem 0.625rem;
@@ -275,51 +283,8 @@ main .grid article{
         font-weight: 700;
     }
 }
-/* final our services */
-/* inicio about us */
+/* final our blogs */
 
-#aboutus {
-    margin-bottom: 12.5rem;
-}
-
-section#aboutus .flex{
-    margin-top: 1.875rem;
-    display: flex;
-    flex-direction: column;
-    gap: var(--margingrid);
-    & h3{
-        font-weight: 700;
-        font-size: 120%;
-    }
-    & h4{
-        color: var(--colorprincipal);
-        font-size: 110%;
-        margin: var(--margingrid) 0;
-    }
-    & p{
-        color: #666;
-        line-height: 1.20;
-    }  
-}
-
-section#aboutus .imagen{
-    border: 3px solid var(--colorprincipal);
-    transform: rotateZ(10deg);
-    width: 95%;
-    transition: 1s;
-}
-
-section#aboutus .imagen .marco{
-    transform: rotateZ(-10deg);
-    transition: 1s;
-}
-
-section#aboutus figure:hover :is(.imagen, .marco){
-    transform: rotateZ(0deg);
-}
-
-
-/* final about us */
 
 
 /* inicio mequeries */
